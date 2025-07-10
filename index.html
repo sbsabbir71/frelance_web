@@ -3,155 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BDFreelance - Find Freelancers & Jobs</title>
-    <!-- Rest of head remains the same -->
+    <title>BDFreelance - Hire Freelancers & Find Jobs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Top Navigation Bar -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">BDFreelance</a>
-            <!-- Rest of navbar remains the same -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">BD</span>
+                <span class="logo-text">Freelance</span>
+            </a>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for jobs or freelancers...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <a href="jobs.html">Find Work</a>
+                <a href="freelancers.html">Find Freelancers</a>
+                <a href="login.html" class="btn-login">Log In</a>
+                <a href="signup.html" class="btn-signup">Sign Up</a>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
-    <!-- Rest of the HTML remains the same until the footer -->
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>BDFreelance</h3>
-                    <!-- Rest of footer remains the same -->
-                </div>
-                <!-- Rest of footer columns remain the same -->
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 BDFreelance. All rights reserved.</p>
-                <!-- Rest of footer bottom remains the same -->
-            </div>
-        </div>
-    </footer>
-    <!-- Rest of the file remains the same -->
-</body>
-</html>
-
-    <!-- Hero Section -->
+    <!-- Hero Banner -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Find the perfect freelance services for your business</h1>
-                <div class="hero-search">
-                    <input type="text" placeholder="What service are you looking for?">
-                    <button>Search</button>
-                </div>
-                <div class="popular-searches">
-                    <span>Popular:</span>
-                    <a href="#">Web Design</a>
-                    <a href="#">Logo Design</a>
-                    <a href="#">WordPress</a>
-                    <a href="#">Content Writing</a>
+                <h1>Get your work done with top freelancers in Bangladesh</h1>
+                <p>Hire expert freelancers for any job, online.</p>
+                
+                <div class="hero-cta">
+                    <a href="signup.html" class="btn-primary">Hire a Freelancer</a>
+                    <a href="signup.html" class="btn-secondary">Earn Money Freelancing</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Categories Section -->
+    <!-- Popular Job Categories -->
     <section class="categories">
         <div class="container">
-            <h2>Browse talent by category</h2>
+            <h2>Popular Job Categories</h2>
+            
             <div class="category-grid">
                 <div class="category-card">
-                    <i class="fas fa-code"></i>
-                    <h3>Development & IT</h3>
-                    <p>1,200+ Freelancers</p>
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>1,500+ Jobs</p>
                 </div>
+                
                 <div class="category-card">
                     <i class="fas fa-paint-brush"></i>
-                    <h3>Design & Creative</h3>
-                    <p>850+ Freelancers</p>
+                    <h3>Graphic Design</h3>
+                    <p>900+ Jobs</p>
                 </div>
+                
                 <div class="category-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Marketing</h3>
-                    <p>700+ Freelancers</p>
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile App Dev</h3>
+                    <p>700+ Jobs</p>
                 </div>
+                
                 <div class="category-card">
-                    <i class="fas fa-pen-fancy"></i>
-                    <h3>Writing & Translation</h3>
-                    <p>500+ Freelancers</p>
+                    <i class="fas fa-search-dollar"></i>
+                    <h3>Digital Marketing</h3>
+                    <p>1,200+ Jobs</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Freelancers Section -->
+    <!-- Top Freelancers Section -->
     <section class="freelancers">
         <div class="container">
-            <h2>Top Freelancers</h2>
+            <div class="section-header">
+                <h2>Top Freelancers in Bangladesh</h2>
+                <a href="freelancers.html" class="view-all">View All →</a>
+            </div>
+            
             <div class="freelancer-grid">
                 <!-- Freelancer Card 1 -->
                 <div class="freelancer-card">
-                    <div class="freelancer-header">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Freelancer">
+                    <div class="freelancer-img">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Freelancer">
+                        <span class="online-status"></span>
+                    </div>
+                    
+                    <div class="freelancer-info">
+                        <h3>Rahim Khan</h3>
+                        <p class="title">Web Developer</p>
+                        
                         <div class="rating">
                             <span class="stars">★★★★★</span>
-                            <span class="count">(128)</span>
+                            <span class="reviews">(142 reviews)</span>
                         </div>
+                        
+                        <div class="skills">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        
+                        <div class="rate">$25/hr</div>
                     </div>
-                    <h3>Sarah Johnson</h3>
-                    <p class="title">Web Developer</p>
-                    <p class="skills">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </p>
-                    <p class="rate">$50/hr</p>
-                    <button class="btn-hire">Hire Me</button>
+                    
+                    <button class="btn-hire">Hire Now</button>
                 </div>
                 
                 <!-- Freelancer Card 2 -->
                 <div class="freelancer-card">
-                    <div class="freelancer-header">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Freelancer">
+                    <div class="freelancer-img">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Freelancer">
+                        <span class="online-status"></span>
+                    </div>
+                    
+                    <div class="freelancer-info">
+                        <h3>Fatima Akter</h3>
+                        <p class="title">Graphic Designer</p>
+                        
                         <div class="rating">
                             <span class="stars">★★★★☆</span>
-                            <span class="count">(96)</span>
+                            <span class="reviews">(87 reviews)</span>
                         </div>
+                        
+                        <div class="skills">
+                            <span>Photoshop</span>
+                            <span>Illustrator</span>
+                            <span>UI/UX</span>
+                        </div>
+                        
+                        <div class="rate">$20/hr</div>
                     </div>
-                    <h3>Michael Chen</h3>
-                    <p class="title">Graphic Designer</p>
-                    <p class="skills">
-                        <span>Photoshop</span>
-                        <span>Illustrator</span>
-                        <span>UI/UX</span>
-                    </p>
-                    <p class="rate">$35/hr</p>
-                    <button class="btn-hire">Hire Me</button>
+                    
+                    <button class="btn-hire">Hire Now</button>
                 </div>
                 
                 <!-- Freelancer Card 3 -->
                 <div class="freelancer-card">
-                    <div class="freelancer-header">
-                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Freelancer">
+                    <div class="freelancer-img">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Freelancer">
+                    </div>
+                    
+                    <div class="freelancer-info">
+                        <h3>Karim Ahmed</h3>
+                        <p class="title">SEO Specialist</p>
+                        
                         <div class="rating">
                             <span class="stars">★★★★★</span>
-                            <span class="count">(201)</span>
+                            <span class="reviews">(210 reviews)</span>
                         </div>
+                        
+                        <div class="skills">
+                            <span>SEO</span>
+                            <span>Google Ads</span>
+                            <span>Content Marketing</span>
+                        </div>
+                        
+                        <div class="rate">$30/hr</div>
                     </div>
-                    <h3>Emma Rodriguez</h3>
-                    <p class="title">Content Writer</p>
-                    <p class="skills">
-                        <span>Blog Writing</span>
-                        <span>SEO</span>
-                        <span>Copywriting</span>
-                    </p>
-                    <p class="rate">$25/hr</p>
-                    <button class="btn-hire">Hire Me</button>
+                    
+                    <button class="btn-hire">Hire Now</button>
                 </div>
             </div>
-            <button class="btn-view-all">View All Freelancers</button>
         </div>
     </section>
 
@@ -159,27 +181,75 @@
     <section class="how-it-works">
         <div class="container">
             <h2>How BDFreelance Works</h2>
+            
             <div class="steps">
                 <div class="step">
-                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
                     <h3>Post a Job</h3>
-                    <p>Describe your project and the skills required.</p>
+                    <p>Describe your project and budget.</p>
                 </div>
+                
                 <div class="step">
-                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
                     <h3>Get Bids</h3>
-                    <p>Receive proposals from qualified freelancers.</p>
+                    <p>Freelancers send proposals.</p>
                 </div>
+                
                 <div class="step">
-                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
                     <h3>Choose Freelancer</h3>
-                    <p>Compare profiles and hire the best fit.</p>
+                    <p>Hire the best fit.</p>
                 </div>
+                
                 <div class="step">
-                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
                     <h3>Pay Securely</h3>
-                    <p>Release payment when the work is completed.</p>
+                    <p>Release payment upon completion.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>BDFreelance helped me find a great developer for my e-commerce site. Highly recommended!</p>
+                    </div>
+                    
+                    <div class="client">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client">
+                        <div class="client-info">
+                            <h4>Nusrat Jahan</h4>
+                            <p>CEO, ShopBD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to get started?</h2>
+            <p>Join thousands of businesses and freelancers in Bangladesh.</p>
+            <div class="cta-buttons">
+                <a href="signup.html" class="btn-primary">Hire a Freelancer</a>
+                <a href="signup.html" class="btn-outline">Become a Freelancer</a>
             </div>
         </div>
     </section>
@@ -188,34 +258,44 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-column">
+                <div class="footer-col">
                     <h3>BDFreelance</h3>
-                    <a href="#">About Us</a>
-                    <a href="#">Careers</a>
-                    <a href="#">Press</a>
-                </div>
-                <div class="footer-column">
-                    <h3>Resources</h3>
-                    <a href="#">Help Center</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Community</a>
-                </div>
-                <div class="footer-column">
-                    <h3>Browse</h3>
-                    <a href="#">Freelancers by Skill</a>
-                    <a href="#">Freelancers by Country</a>
-                    <a href="#">Jobs by Category</a>
-                </div>
-                <div class="footer-column">
-                    <h3>Connect</h3>
-                    <div class="social-icons">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    <p>The best freelance marketplace in Bangladesh.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+                
+                <div class="footer-col">
+                    <h4>For Clients</h4>
+                    <ul>
+                        <li><a href="#">How to Hire</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Client Reviews</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>For Freelancers</h4>
+                    <ul>
+                        <li><a href="#">How to Find Jobs</a></li>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Freelancer Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
+            
             <div class="footer-bottom">
                 <p>&copy; 2023 BDFreelance. All rights reserved.</p>
                 <div class="footer-links">
@@ -227,6 +307,6 @@
         </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
