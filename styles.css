@@ -1,6 +1,6 @@
 /* ===== Global Styles ===== */
 :root {
-    --primary: #2ecc;
+    --primary: #2ecc70;
     --primary-dark: #27ae60;
     --secondary: #3498db;
     --dark: #2c3e50;
@@ -236,7 +236,7 @@ a {
     border-radius: 8px;
     padding: 30px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 15px rgba(1, 1, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
